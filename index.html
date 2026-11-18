@@ -267,5 +267,16 @@ footer .col{margin-bottom:22px}
     Morango: “Garden strawberry (Fragaria × ananassa) single2”, Ivar Leidus, <a href="https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_×_ananassa)_single2.jpg">CC BY-SA 4.0</a></div>
   <div>© 2026 · Todos os direitos reservados.</div>
 </div></footer>
+<script>
+/* TODO: substituir por envio real (CRM/e-mail) ou link de checkout */
+document.querySelectorAll('form[data-todo]').forEach(function(f){
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var b=f.querySelector('button');
+    b.textContent='Prévia: formulário ainda não conectado';
+    b.disabled=true;
+  });
+});
+</script>
 </body>
 </html>
